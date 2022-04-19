@@ -55,3 +55,4 @@ class TaskUpdates(APIView):
         handler = TaskUpdatesHandler(request,year,month,day)
         response = handler.handle_request(TaskUpdatesSchema._lin_function)
         return response
+

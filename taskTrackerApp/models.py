@@ -30,7 +30,7 @@ class Task(models.Model):
     end_date=models.DateField(max_length=30,blank=True)
     team_member=models.CharField(max_length=30,blank=True)
     status = models.CharField(max_length=30,blank=True)
-    updated_on=models.DateField(max_length=30,blank=True)
+    updated_on=models.DateField(max_length=30,blank=True,null=True)
     def __str__(self):
         return str(self.task_id)
 
