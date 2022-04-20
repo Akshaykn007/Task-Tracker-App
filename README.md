@@ -42,3 +42,5 @@ Django-based webapp, used to track tasks assigned for members etc.
     for editing task : /task/<task_id>/<field> with request body
     for task creation : /task
     for report generation : /year/month/day
+    
+    `note` : put bearer token and username and password while checking for all APIs 
