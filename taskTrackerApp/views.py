@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+
+__author__ = "Akshay K N"
+__copyright__ = "Copyright 2022 Frejun."
+__title__ = "Task-Tracker-APP"
+__version__ = "0.0"
+
 from django.shortcuts import render
 from requests import Response
 from rest_framework.views import APIView
@@ -54,5 +61,6 @@ class TaskUpdates(APIView):
     def get(self,request,year,month,day):
         handler = TaskUpdatesHandler(request,year,month,day)
         response = handler.handle_request(TaskUpdatesSchema._lin_function)
+        # send_mail('Status Report For The Day', 'Hi sir plz check the report for the day', 'unknown@gmail.com', emailList,fail_silently=False)
         return response
 
