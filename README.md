@@ -30,9 +30,7 @@ Django-based webapp, used to track tasks assigned for members etc.
 
 ### 5. Sanity Check (Ping service)
     Follow the below commands..
-    curl --location --request GET 'http://127.0.0.1:8000/ping' \
---header 'Cookie: csrftoken=VBEW2S4ukTkrwhzMKbeFA5ti5FZBO6vurCY9QhILDwGr2vk34a
-2xPlDISPrqGd02'
+    curl --location --request GET 'http://127.0.0.1:8000/ping' \--header 'Cookie: csrftoken=VBEW2S4ukTkrwhzMKbeFA5ti5FZBO6vurCY9QhILDwGr2vk34a2xPlDISPrqGd02'
 
 ### 6. For testing APIs
     `add members to members table in default db with userid, email and
@@ -42,3 +40,5 @@ Django-based webapp, used to track tasks assigned for members etc.
     for editing task : /task/<task_id>/<field> with request body
     for task creation : /task
     for report generation : /year/month/day
+    
+    `note` : put bearer token and username and password while checking for all APIs 
